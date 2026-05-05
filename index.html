@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UrbanFit Studio: página web moderna con HTML, CSS y JavaScript para una tarea entregable." />
+  <title>UrbanFit Studio | Entrena diferente</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">Urban<span>Fit</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#clases">Clases</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Entrenamiento funcional · nutrición · constancia</p>
+          <h1>Entrena fuerte, vive mejor.</h1>
+          <p class="hero-text">
+            UrbanFit Studio es un espacio pensado para personas que quieren mejorar su salud,
+            ganar energía y crear una rutina realista, sin postureo y con acompañamiento.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Reservar prueba</a>
+            <a class="btn btn-secondary" href="#clases">Ver clases</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Resumen del estudio">
+          <div class="stat">
+            <strong>+120</strong>
+            <span>alumnos activos</span>
+          </div>
+          <div class="stat">
+            <strong>6</strong>
+            <span>tipos de clases</span>
+          </div>
+          <div class="stat">
+            <strong>4.9</strong>
+            <span>valoración media</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Qué ofrecemos</p>
+          <h2>Un plan claro para avanzar</h2>
+          <p>
+            Combinamos clases dirigidas, seguimiento personalizado y hábitos sencillos para que el progreso sea sostenible.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="icon">🏋️</div>
+            <h3>Entrenamiento funcional</h3>
+            <p>Sesiones dinámicas para mejorar fuerza, movilidad, resistencia y coordinación.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🥗</div>
+            <h3>Orientación nutricional</h3>
+            <p>Recomendaciones básicas para ordenar comidas sin dietas imposibles ni restricciones absurdas.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📈</div>
+            <h3>Seguimiento mensual</h3>
+            <p>Control de objetivos, evolución y ajustes del entrenamiento según tu ritmo y disponibilidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="clases">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Clases destacadas</p>
+          <h2>Elige cómo quieres entrenar</h2>
+        </div>
+
+        <div class="class-list">
+          <article class="class-item">
+            <div>
+              <h3>Full Body</h3>
+              <p>Trabajo completo de fuerza y cardio. Ideal para empezar o retomar.</p>
+            </div>
+            <span>45 min</span>
+          </article>
+
+          <article class="class-item">
+            <div>
+              <h3>Power Legs</h3>
+              <p>Entrenamiento de tren inferior, glúteo y core con técnica segura.</p>
+            </div>
+            <span>50 min</span>
+          </article>
+
+          <article class="class-item">
+            <div>
+              <h3>Mobility & Core</h3>
+              <p>Movilidad, estabilidad y prevención de molestias por malas posturas.</p>
+            </div>
+            <span>40 min</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="precios">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Planes</p>
+          <h2>Precios sencillos</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Básico</h3>
+            <p class="price">29€<span>/mes</span></p>
+            <ul>
+              <li>2 clases por semana</li>
+              <li>Acceso a comunidad</li>
+              <li>Rutina de inicio</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contacto">Elegir plan</a>
+          </article>
+
+          <article class="price-card featured">
+            <p class="badge">Más elegido</p>
+            <h3>Pro</h3>
+            <p class="price">49€<span>/mes</span></p>
+            <ul>
+              <li>Clases ilimitadas</li>
+              <li>Seguimiento mensual</li>
+              <li>Plan de hábitos</li>
+            </ul>
+            <a class="btn btn-primary" href="#contacto">Elegir plan</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Personal</h3>
+            <p class="price">79€<span>/mes</span></p>
+            <ul>
+              <li>Entreno personalizado</li>
+              <li>Revisión semanal</li>
+              <li>Objetivos específicos</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contacto">Elegir plan</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Reserva tu clase de prueba</h2>
+          <p>
+            Déjanos tus datos y te responderemos para buscar el mejor horario según tu disponibilidad.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required />
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Cuéntanos tu objetivo" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Urban<span>Fit</span></p>
+      <small>Proyecto HTML con estilos · Entregable CSS</small>
+      <div class="social-links" aria-label="Redes sociales">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
